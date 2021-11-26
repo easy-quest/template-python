@@ -13,7 +13,7 @@ tasks:
       # rm requirements.in
       python -m pip install -U -r requirements.txt
       # printf "#!/usr/bin/env bash \nexport z='EasyQuest'" > .envrc;direnv allow
-      echo 'TODO:Good $z'
+      echo 'TODO:Good!!!'
 
 # ports:
 #   - port: 8000
