@@ -2,14 +2,14 @@
 
 This is template configured for ephemeral development environments on [Gitpod](https://www.gitpod.io/).
 
-## Next Steps
-[![prebuild](https://gitpod.io/button/open-in-gitpod.svg)(https://gitpod.io/#prebuild/https://github.com/easy-quest/template-python)
+## prebuild
+[![prebuild](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#prebuild/https://github.com/easy-quest/template-python)
 
-Click the button below to start a new development environment:
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/easy-quest/template-python)
 
 ## Get Started With Your Own Project
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/easy-quest/template-python)
+
+
 
 ### A new project
 
