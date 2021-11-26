@@ -2,10 +2,10 @@ tasks:
   - init: |
       echo 'TODO: build project'
       python -m pip install --upgrade pip
-      python -m pip install --upgrade pip setuptools wheel pip-tools requests poetry bs4 
+      python -m pip install --upgrade pip setuptools wheel pip-tools requests bs4 
       python -m pip install --upgrade pip yapf autoflake isort coverage scrapy newspaper3k
       python -m pip install --upgrade 'requests[socks]'
-      sudo apt-get install lynx direnv poetry tor -y
+      sudo apt-get install lynx direnv tor -y
     command: |
       echo 'TODO: start app'
       python -m pip freeze > requirements.in
