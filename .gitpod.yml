@@ -2,17 +2,17 @@ tasks:
   - init: |
       echo 'TODO: build project'
       python -m pip install --upgrade pip
-      python -m pip install --upgrade pip setuptools wheel pip-tools requests bs4 
-      python -m pip install --upgrade pip yapf autoflake isort coverage scrapy newspaper3k
-      python -m pip install --upgrade 'requests[socks]'
+      python -m pip install --upgrade pip setuptools wheel pip-tools 
+      # python -m pip install --upgrade pip yapf autoflake isort coverage scrapy newspaper3k requests bs4 
+      # python -m pip install --upgrade 'requests[socks]'
       sudo apt-get install lynx direnv tor -y
     command: |
       echo 'TODO: start app'
-      python -m pip freeze > requirements.in
-      pip-compile
-      rm requirements.in
+      # python -m pip freeze > requirements.in
+      # pip-compile
+      # rm requirements.in
       python -m pip install -U -r requirements.txt
-      printf "#!/usr/bin/env bash \nexport z='EasyQuest'" > .envrc;direnv allow
+      # printf "#!/usr/bin/env bash \nexport z='EasyQuest'" > .envrc;direnv allow
       echo 'TODO:Good $z'
 
 # ports:
