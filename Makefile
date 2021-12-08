@@ -1,3 +1,3 @@
 
 gp:
-	git status
+	git status;./gp.sh
