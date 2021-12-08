@@ -1,6 +1,5 @@
 
 gp:
-	git status --porcelain
+	git status
 	git add -A .
-	git commit -am 
-	git push
+	text=$(uname -os;date);git commit -m "$text";git push
