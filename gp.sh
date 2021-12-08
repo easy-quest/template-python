@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 
 git add -A .;
-text=$(uname -os;date);git commit -m "$text";git push
+text=$(uname -o;date);git commit -m "$text";git push
