@@ -15,7 +15,10 @@ class Parser:
         self.category_links = []
         self.page_links = []
         self.drink_links = []
-        self.csv
+        self.csv_rows = []
+        self.csv_name = "test.csv"
+        self.basic_url = "https://www.myheritage.com/site-1262049512/"
+        self.ua = UserAgent()
 
 class MainSpider(scrapy.Spider):
     name = 'main'
