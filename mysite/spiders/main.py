@@ -4,11 +4,15 @@ import time
 import requests
 import asyncio
 import aiohttp
-import scrapy
 from random import choice
 from datetime import datetime
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as bs
 from fake_useragent import UserAgent
+
+
+def bs(text, param):
+    pass
+
 
 class Parser:
     def __init__(self):
@@ -27,4 +31,13 @@ class Parser:
     def parse_categories(self):
         response = requests.get(url=self.basic_url, headers=self.headers)
         soup = bs(response.text, "lxml")
-        nav = soup.find("ul", class_="ng-scope")
+        nav = soup.find("ul", class_="sidebar")
+        li_s = nav.find_all('li', class_="item ng-scope")
+
+        print(li_s)
+
+    def main(self):
+        pass
+
+    if __name__ == '__main__':
+        main()
