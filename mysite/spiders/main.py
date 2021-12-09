@@ -19,11 +19,7 @@ class Parser:
         self.csv_name = "test.csv"
         self.basic_url = "https://www.myheritage.com/site-1262049512/"
         self.ua = UserAgent()
-
-class MainSpider(scrapy.Spider):
-    name = 'main'
-    allowed_domains = ['example.com']
-    start_urls = ['http://example.com/']
-
-    def parse(self, response):
-        pass
+        self.headers = {
+                "accept": "*/*",
+                "user-agent": self.ua.random
+        } 
