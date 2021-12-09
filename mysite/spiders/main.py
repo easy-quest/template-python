@@ -23,3 +23,8 @@ class Parser:
                 "accept": "*/*",
                 "user-agent": self.ua.random
         } 
+
+    def parse_categories(self):
+        response = requests.get(url=self.basic_url, headers=self.headers)
+        soup = bs(response.text, "lxml")
+        nav = soup.find("ul", class_="ng-scope")
