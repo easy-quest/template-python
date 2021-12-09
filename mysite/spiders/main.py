@@ -3,12 +3,12 @@ import csv
 import time
 import requests
 import asyncio
-import aiohhtp
+import aiohttp
 import scrapy
 from random import choice
 from datetime import datetime
-from ds4 import BeautifulSoup
-from fake_useragent import userAgent
+from bs4 import BeautifulSoup
+from fake_useragent import UserAgent
 
 class Parser:
     def __init__(self):
@@ -17,7 +17,7 @@ class Parser:
         self.drink_links = []
         self.csv_rows = []
         self.csv_name = "test.csv"
-        self.basic_url = "https://www.myheritage.com/site-1262049512/"
+        self.basic_url = "https://www.myheritage.com/site-1262049512"
         self.ua = UserAgent()
         self.headers = {
                 "accept": "*/*",
